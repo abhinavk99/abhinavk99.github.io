@@ -1,2 +1,2 @@
 # abhinavk99.github.io
-Portfolio website at <abhinavkasamsetty.com>
+Portfolio website at <http://abhinavkasamsetty.com>

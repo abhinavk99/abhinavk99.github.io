@@ -1,0 +1,285 @@
+%-------------------------
+% Resume in Latex
+% Author : Abhinav Kasamsetty
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{url}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+% \urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}\textwidth{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeEducation}[6]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}\textwidth{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}
+      \textbf{\small#5:} #6 \\
+}
+
+\newcommand{\resumeProject}[3]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}\textwidth{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \space\small{\url{#2}} & #3 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingNoBulletListStart}{\begin{itemize}[leftmargin=0pt]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Abhinav Kasamsetty} & \href{https://abhinavk99.github.io}{abhinavk99.github.io} \\
+  \href{mailto:abhinavkasamsetty@gmail.com}{abhinavkasamsetty@gmail.com} & \href{https://www.github.com/abhinavk99}{github.com/abhinavk99} \\
+  805-304-6352 & \href{https://www.linkedin.com/in/abhinavkasamsetty/}{linkedin.com/in/abhinavkasamsetty}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingNoBulletListStart
+    \resumeEducation
+      {The University of Texas at Austin}{Aug 2017 - May 2020}
+      {Bachelor of Science in Computer Science}{GPA: 3.87}
+      {Relevant Coursework}{Data Structures, Algorithms, Discrete Mathematics, Computer Architecture, Operating Systems, Object Oriented Programming, Programming Languages, Probability and Statistics, Linear Algebra}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingNoBulletListStart
+
+    % \resumeSubheading
+    %   {Cloud Immense}{Arlington, TX}
+    %   {Intern}{Nov 2016 - Dec 2016}
+    %   \resumeItemListStart
+    %     \resumeItem
+    %       {Worked with Amazon Web Services Cloud and Google Cloud Platform.}
+    %     \resumeItem
+    %       {Tested backend functions of the program.}
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon}{Jun 2018 - Aug 2018}
+      {Software Engineering Intern \textbar\space AWS Database Migration Service}{East Palo Alto, CA}
+      \resumeItemListStart
+        \resumeItem
+          {Designed and developed an end to end notifications system to notify customers of operational and general information. Improved time it takes to send notifications from days to minutes (over 57,000\% faster).}
+        \resumeItem
+          {Added ability to create/update notifications using a Ruby on Rails front end and a Spring and Oracle DB back end.}
+        \resumeItem
+          {Developed an interface on the AWS DMS Console for users to read their notifications using React and Typescript.}
+        \resumeItem
+          {Gained familiarity in using various AWS services, including S3, EC2, and Lambda.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Vyadvik Inc.}{Jun 2016 - Jul 2016}
+      {Intern}{Allen, TX}
+      \resumeItemListStart
+        \resumeItem
+          {Developed a chatbot in JavaScript for a client to show their customers their various household professional services and improve customer support.}
+        \resumeItem
+          {Integrated the bot with Wit.ai and deployed it using Twilio.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingNoBulletListStart
+  
+    \resumeProject
+      {PickYourProf}{https://pick-your-prof.herokuapp.com/}{Oct 2017 - Present}
+      \resumeItemListStart
+        \resumeItem
+          {Cross platform web and mobile application that uses Rate My Professors and the UT Austin grade database to rank professors. Originally created at HackTX 2017 as part of a team.}
+        \resumeItem
+          {Scraped Rate My Professors, implemented the algorithm in Node.js and Dart, and wrote the backend Express server.}
+        \resumeItem
+          {\textbf{Technologies Used:} Node.js, Express, Cheerio, HTML/JS/CSS (Bootstrap), SQLite, Flutter, Dart}
+      \resumeItemListEnd
+      
+    \resumeProject
+      {Dream Cooker}{https://github.com/dfan/alexa-hackathon-2018}{Jul 2018}
+      \resumeItemListStart
+        \resumeItem
+          {Alexa skill that sends a list of ingredients for what users want to cook. Supports email, SMS, and Alexa todo list.}
+        \resumeItem
+          {Implemented generating the recipe and list of ingredients and worked on the Lambda function.}
+        \resumeItem
+          {\textbf{Technologies Used:} Node.js, Alexa SDK, AWS Lambda, AWS SNS, Cheerio, Allrecipes API, Sendgrid API}
+      \resumeItemListEnd
+    
+    \resumeProject
+      {LiveCoin API}{https://www.npmjs.com/package/livecoin-api}{Jan 2018 - Jul 2018}
+      \resumeItemListStart
+        \resumeItem
+          {RESTful API wrapper for the LiveCoin cryptocurrency exchange for Node.js.}
+        \resumeItem
+          {Supports all features of the LiveCoin API, including fetching public and private customer data and buying and selling cryptocurrencies programatically.}
+        \resumeItem
+          {\textbf{Technologies Used:} Node.js, LiveCoin API}
+      \resumeItemListEnd
+      
+    \resumeProject
+      {Y86 Syntax Highlighter}{https://marketplace.visualstudio.com/publishers/abhinavk99}{May 2018}
+      \resumeItemListStart
+        \resumeItem
+          {Y86 programming language syntax highlighter for Visual Studio Code.}
+      \resumeItemListEnd
+      
+    % \resumeProject
+    %   {CryptoBot}{https://telegram.me/coinmarketcap_info_bot}{Jan 2018 - Aug 2018}
+    %   \resumeItemListStart
+    %     \resumeItem
+    %       {Telegram bot that returns price information and market statistics about cryptocurrencies.}
+    %     \resumeItem
+    %       {\textbf{Technologies Used:} Node.js, Telegram API, CoinMarketCap API, Binance API}
+    %   \resumeItemListEnd
+
+    % \resumeProject
+    %   {Human Simulator}{March 2018 - May 2018}
+    %   \resumeItemListStart
+    %     \resumeItem
+    %       {Twitter bot written in Python that simulates human speech.}
+    %     \resumeItem
+    %       {Used a Markov chain to train on a person's texts and mimic the speech patterns.}
+    %   \resumeItemListEnd
+      
+    % \resumeProject
+    %   {QuizFlash}{March 2018}
+    %   \resumeItemListStart
+    %     \resumeItem
+    %       {Lightweight front-end for Quizlet written in Kotlin using the Quizlet API.}
+    %     \resumeItem
+    %       {Development began at Wholesome Hacks 2018.}
+    %   \resumeItemListEnd
+
+    % \resumeProject
+    %   {RubikSolver}{Dec 2017 - April 2018}
+    %   \resumeItemListStart
+    %     \resumeItem
+    %       {Program representing a Rubik's cube and the WCA regulation move set written in Python.}
+    %     \resumeItem
+    %       {Implemented a depth first search algorithm to solve the cube.}
+    %   \resumeItemListEnd
+
+    % \resumeProject
+    %   {PoliCheckers}{Apr 2017 - May 2017}
+    %   \resumeItemListStart
+    %     \resumeItem
+    %       {Implementation of Checkers using Java. Faces of politicians were used as the pieces.}
+    %   \resumeItemListEnd
+        
+    % \resumeProject
+    %   {CollegeBot}{Aug 2016 - Jan 2017}
+    %   \resumeItemListStart
+    %     \resumeItem
+    %       {Created a bot for the Discord platform using Node.js that returns information about colleges from their names.}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%-----------COMMUNITY INVOLVEMENT----
+% \section{Community Involvement}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {SiliconAndhra ManaBadi}{Plano, TX}
+%       {Assistant Teacher}{Aug 2014 - May 2017}
+%       \resumeItemListStart
+%         \resumeItem
+%           {Taught elementary schoolers Telugu, proctored tests, and graded homework.}
+%       \resumeItemListEnd
+
+%   \resumeSubHeadingListEnd
+
+%-----------SKILLS-------------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+      {\textbf{Proficient}: Java, JavaScript, Node.js, Python, Ruby on Rails.}
+    \resumeSubItem
+      {\textbf{Intermediate}: C, Kotlin, SQL, TypeScript, Haskell, Dart, Flutter, Spring.}
+    \resumeSubItem
+      {\textbf{Basic}: HTML, CSS, \LaTeX, Go, React, Express, Flask.}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-------------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+      {University Honors, Thomson Reuters Scholarship, President's Horizon Scholarship, National Merit Finalist}
+  \resumeSubHeadingListEnd
+  
+%-----------INTERESTS----------------
+% \section{Interests}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem
+%       {Basketball, Rubik's cubing, Cryptocurrency trading, Fortnite}
+%   \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

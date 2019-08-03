@@ -69,7 +69,7 @@
 \newcommand{\resumeProject}[3]{
   \vspace{-1pt}\item[]
     \begin{tabular*}\textwidth{l@{\extracolsep{\fill}}r}
-      \textbf{#1} \space\small{\url{#2}} & #3 \\
+      \textbf{#1} \textbar\space #2 & #3 \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -153,7 +153,7 @@
   \resumeSubHeadingNoBulletListStart
   
     \resumeProject
-      {PickYourProf}{https://pick-your-prof.herokuapp.com/}{Oct 2017 - Present}
+      {\href{https://pick-your-prof.herokuapp.com/}{PickYourProf}}{Co-creator, Lead and backend developer}{Oct 2017 - Present}
       \resumeItemListStart
         \resumeItem
           {Cross platform web and mobile application that uses Rate My Professors and the UT Austin grade database to rank professors. Originally created at HackTX 2017 as part of a team.}
@@ -164,27 +164,27 @@
       \resumeItemListEnd
 
     \resumeProject
-      {flybuy}{https://github.com/Oceanwall/flybuy}{Jan 2019}
+      {\href{https://github.com/AWConant/jikanpy}{Jikanpy}}{Maintainer, Sole developer}{Apr 2018 - Present}
       \resumeItemListStart
         \resumeItem
-          {Electron application that enhances the American Airlines in-flight experience.}
+          {RESTful API wrapper for the Jikan API for MyAnimeList supporting both synchronous and asynchronous usage.}
         \resumeItem
-          {Won 3rd place in Best Airline Industry Hack at TAMUHack 2019.}
+          {Added static typing using mypy and unit tested with Pytest and VCR.py for 100\% coverage utilizing Travis CI.}
         \resumeItem
-          {Allows for fliers to order food, get live updates of the flight floor plan, and provide customer feedback.}
-        \resumeItem
-          {\textbf{Technologies Used:} Node.js, Electron, American Airlines Mock API, HTML/JS/CSS (Materialize)}
+          {\textbf{Technologies Used:} Python, Requests, AioHTTP, mypy, Pytest, VCR.py}
       \resumeItemListEnd
 
     \resumeProject
-      {LiveCoin API}{https://www.npmjs.com/package/livecoin-api}{Jan 2018 - Jul 2018}
+      {Game of Thrones Relation Extractor}{Co-creator, ML developer}{Jan 2019}
       \resumeItemListStart
         \resumeItem
-          {RESTful API wrapper for the LiveCoin cryptocurrency exchange with over 2,500 downloads.}
+          {System that extracts relationships between characters on Game of Thrones appearing in wiki pages.}
         \resumeItem
-          {Supports all features of the LiveCoin API, including fetching customer data and buying and selling cryptocurrencies.}
+          {Extracted character names and relation triples with named entity recognition and OpenIE using CoreNLP.}
         \resumeItem
-          {\textbf{Technologies Used:} Node.js, LiveCoin API}
+          {Handled coreferences using OpenIE and spaCy and stored relation triples in Neo4j.}
+        \resumeItem
+          {\textbf{Technologies Used:} Python, CoreNLP, OpenIE, spaCy, Neo4j, Wikia API}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -192,11 +192,11 @@
 \section{Skills}
   \resumeSubHeadingListStart
     \resumeSubItem
-      {\textbf{Proficient}: Java, JavaScript, TypeScript, Node.js, Python.}
+      {\textbf{Proficient}: Java, Python, Node.js, JavaScript, TypeScript.}
     \resumeSubItem
-      {\textbf{Intermediate}: C\texttt{++}, Kotlin, SQL, Dart, Flutter, Jest, Ruby on Rails, JUnit, TestNG.}
+      {\textbf{Intermediate}: C\texttt{++}, Kotlin, SQL, Dart, Flutter, Jest, Ruby on Rails, Pytest, TestNG.}
     \resumeSubItem
-      {\textbf{Basic}: HTML, CSS, \LaTeX, Go, React, Express, Flask, Chai, Mocha, Spring, Guice.}
+      {\textbf{Basic}: HTML, CSS, \LaTeX, Go, React, Express, Flask, JUnit, Chai, Mocha, Spring, Guice.}
   \resumeSubHeadingListEnd
 
 %-----------AWARDS-------------------

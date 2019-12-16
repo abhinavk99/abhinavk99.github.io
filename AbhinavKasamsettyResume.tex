@@ -66,10 +66,10 @@
       % \textbf{\small#6:} #7 \\
 }
 
-\newcommand{\resumeProject}[3]{
+\newcommand{\resumeProject}[2]{
   \vspace{-1pt}\item[]
     \begin{tabular*}\textwidth{l@{\extracolsep{\fill}}r}
-      \textbf{#1} \textbar\space #2 & #3 \\
+      \textbf{#1} & #2 \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -153,12 +153,23 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingNoBulletListStart
-  
+
     \resumeProject
-      {\href{https://pick-your-prof.herokuapp.com/}{PickYourProf}}{Co-creator, Lead and backend developer}{Oct 2017 - Present}
+      {\href{https://www.doctorsearch.me/}{DoctorSearch}}{Oct 2019 - Dec 2019}
       \resumeItemListStart
         \resumeItem
-          {Cross platform web and mobile application that uses Rate My Professors and the UT Austin grade database to rank professors. Originally created at HackTX 2017 as part of a team.}
+          {Website that provides information about doctors and specialties in 50 major cities and was made by a team of 5.}
+        \resumeItem
+          {Created RESTful API that supports filtering, sorting, and searching doctors, specialties, and cities, hosted on AWS.}
+        \resumeItem
+          {\textbf{Technologies Used:} Python, Flask, PostgreSQL, Postman, AWS EB, AWS RDS, Node.js, React, Material UI}
+      \resumeItemListEnd
+
+    \resumeProject
+      {\href{https://pick-your-prof.herokuapp.com/}{PickYourProf}}{Oct 2017 - Present}
+      \resumeItemListStart
+        \resumeItem
+          {Cross platform web and mobile application that uses Rate My Professors and the UT Austin grade database to rank professors. Originally created at HackTX 2017 by a team.}
         \resumeItem
           {Scraped Rate My Professors, implemented the algorithm in Node.js and Dart, and wrote the backend Express server.}
         \resumeItem
@@ -166,7 +177,7 @@
       \resumeItemListEnd
 
     \resumeProject
-      {\href{https://pypi.org/project/jikanpy/}{Jikanpy}}{Maintainer, Sole developer}{Apr 2018 - Present}
+      {\href{https://pypi.org/project/jikanpy/}{Jikanpy}}{Apr 2018 - Present}
       \resumeItemListStart
         \resumeItem
           {RESTful API wrapper for the Jikan API for MyAnimeList supporting both synchronous and asynchronous usage.}
@@ -174,19 +185,6 @@
           {Added static typing using mypy and unit tested with Pytest and VCR.py for 100\% coverage utilizing Travis CI.}
         \resumeItem
           {\textbf{Technologies Used:} Python, Requests, AioHTTP, mypy, Pytest, VCR.py}
-      \resumeItemListEnd
-
-    \resumeProject
-      {Game of Thrones Relation Extractor}{Co-creator, ML developer}{Feb 2019 - Mar 2019}
-      \resumeItemListStart
-        \resumeItem
-          {System that extracts relationships between characters on Game of Thrones appearing in wiki pages.}
-        \resumeItem
-          {Extracted character names and relation triples with named entity recognition and OpenIE using CoreNLP.}
-        \resumeItem
-          {Handled coreferences using OpenIE and spaCy and stored relation triples in Neo4j.}
-        \resumeItem
-          {\textbf{Technologies Used:} Python, CoreNLP, OpenIE, spaCy, Neo4j, Wikia API}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -196,9 +194,9 @@
     \resumeSubItem
       {\textbf{Proficient}: Java, Python, Node.js, JavaScript, TypeScript.}
     \resumeSubItem
-      {\textbf{Intermediate}: C\texttt{++}, Kotlin, SQL, Dart, Flutter, Jest, Ruby on Rails, Pytest, TestNG.}
+      {\textbf{Intermediate}: C\texttt{++}, Kotlin, SQL, Dart, Flutter, Jest, Flask, Pytest, TestNG, Chai, Mocha, AWS.}
     \resumeSubItem
-      {\textbf{Basic}: HTML, CSS, \LaTeX, Go, Haskell, React, Express, Flask, JUnit, Chai, Mocha, Spring, Guice.}
+      {\textbf{Basic}: HTML, CSS, \LaTeX, Go, Haskell, React, Express, JUnit, Spring, Ruby on Rails, GCP.}
   \resumeSubHeadingListEnd
 
 %-----------AWARDS-------------------

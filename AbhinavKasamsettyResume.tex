@@ -1,206 +1,107 @@
-%-------------------------
-% Resume in Latex
-% Author : Abhinav Kasamsetty
-%------------------------
-
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
-\usepackage{fancyhdr}
-\usepackage{url}
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
-\addtolength{\evensidemargin}{-0.375in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-% \urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    #1 \vspace{-2pt}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item[]
-    \begin{tabular*}\textwidth{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \small#3 & \small #4 \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-\newcommand{\resumeEducation}[4]{
-  \vspace{-1pt}\item[]
-    \begin{tabular*}\textwidth{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      #3 & #4
-    \end{tabular*}
-}
-
-\newcommand{\resumeProject}[2]{
-  \vspace{-1pt}\item[]
-    \begin{tabular*}\textwidth{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-    \end{tabular*}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand{\labelitemii}{$\circ$}
-
-\newcommand{\resumeSubHeadingNoBulletListStart}{\begin{itemize}[leftmargin=0pt]}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
 
 
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, letterpaper]{awesome-cv}
+
+\usepackage[none]{hyphenat}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Abhinav}{Kasamsetty}
+% \position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\mobile{805-304-6352}
+\email{abhinavkasamsetty@gmail.com}
+\homepage{abhinavk99.github.io}
+\github{abhinavk99}
+\linkedin{abhinavkasamsetty}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
 \begin{document}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Abhinav Kasamsetty} & \href{https://abhinavk99.github.io}{abhinavk99.github.io} \\
-  \href{mailto:abhinavkasamsetty@gmail.com}{abhinavkasamsetty@gmail.com} & \href{https://www.github.com/abhinavk99}{github.com/abhinavk99} \\
-  805-304-6352 & \href{https://www.linkedin.com/in/abhinavkasamsetty/}{linkedin.com/in/abhinavkasamsetty}
-\end{tabular*}
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
 
-%-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingNoBulletListStart
-
-    \resumeSubheading
-      {Amazon}{Jun 2019 - Aug 2019}
-      {Software Development Engineer Intern \textbar\space Amazon Demand Side Platform}{New York, NY}
-      \resumeItemListStart
-        \resumeItem
-          {Designed a scheduling system to manage the number of tests running concurrently across the team's test suites.}
-        \resumeItem
-          {Developed the system using Java and DynamoDB to handle test runs in queues based on the accessed service.}
-        \resumeItem
-          {Wrote UI integration tests for the Amazon DSP Console using Selenium in Java.}
-        \resumeItem
-          {Created visualization of current running tests using AWS DynamoDB Streams, Lambda, and S3.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Amazon}{Jun 2018 - Aug 2018}
-      {Software Development Engineer Intern \textbar\space AWS Database Migration Service}{East Palo Alto, CA}
-      \resumeItemListStart
-        \resumeItem
-          {Created an end to end notifications system to notify customers of operational and general information, improving time it takes to make announcements to customers from days to minutes (over 57,000\% faster).}
-        \resumeItem
-          {Added ability to create/update notifications using a Ruby on Rails front end and a Spring and Oracle DB back end.}
-        \resumeItem
-          {Developed an interface on the AWS DMS Console for users to read their notifications using React and Typescript.}
-        \resumeItem
-          {Gained familiarity in using various AWS services, including S3, EC2, and Lambda.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {The University of Texas at Austin}{Jan 2020 - May 2020}
-      {Undergraduate Teaching Assistant \textbar\space CS373: Software Engineering}{Austin, TX}
-      \resumeItemListStart
-        \resumeItem
-          {Held office hours three hours a week to help students with questions about the classwork and the projects.}
-        \resumeItem
-          {Graded projects, which require looking at students' code style, unit tests, use of AWS/GCP, and databases.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------SKILLS-------------------
-\section{Skills}
-  \resumeSubHeadingListStart
-    \resumeSubItem
-      {\textbf{Languages}: Java, Python, JavaScript, C\texttt{++}, Ruby, TypeScript, Kotlin}
-    \resumeSubItem
-      {\textbf{Technologies/Frameworks}: AWS, Node.js, React, Express, Flask, Rails, PostgreSQL}
-    \resumeSubItem
-      {\textbf{Testing}: PostgreSQL, Jest, Pytest, TestNG, JUnit, Chai, Mocha}
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingNoBulletListStart
-
-    \resumeProject
-      {\href{https://www.doctorsearch.me/}{DoctorSearch}}{Oct 2019 - Dec 2019}
-      \resumeItemListStart
-        \resumeItem
-          {Website that provides information about doctors and specialties in 50 major cities and was made by a team of 5.}
-        \resumeItem
-          {Created RESTful API that supports filtering, sorting, and searching doctors, specialties, and cities, hosted on AWS.}
-        \resumeItem
-          {\textbf{Technologies Used:} Python, Flask, PostgreSQL, Postman, AWS EB, AWS RDS, Node.js, React, Material UI}
-      \resumeItemListEnd
-
-    \resumeProject
-      {\href{https://pick-your-prof.herokuapp.com/}{PickYourProf}}{Oct 2017 - Present}
-      \resumeItemListStart
-        \resumeItem
-          {Cross platform web and mobile application that uses Rate My Professors and the UT Austin grade database to rank professors. Originally created at HackTX 2017 by a team.}
-        \resumeItem
-          {Scraped Rate My Professors, implemented the algorithm in Node.js and Dart, and wrote the backend Express server.}
-        \resumeItem
-          {\textbf{Technologies Used:} Node.js, Express, Cheerio, HTML/JS/CSS (Bootstrap), SQLite, Flutter, Dart}
-      \resumeItemListEnd
-
-    \resumeProject
-      {\href{https://pypi.org/project/jikanpy/}{Jikanpy}}{Apr 2018 - Present}
-      \resumeItemListStart
-        \resumeItem
-          {RESTful API wrapper for the Jikan API for MyAnimeList supporting both synchronous and asynchronous usage.}
-        \resumeItem
-          {Added static typing using mypy and unit tested with Pytest and VCR.py for 100\% coverage utilizing Travis CI.}
-        \resumeItem
-          {\textbf{Technologies Used:} Python, Requests, AioHTTP, mypy, Pytest, VCR.py}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------AWARDS-------------------
-\section{Awards}
-  \resumeSubHeadingListStart
-    \resumeSubItem
-      {TAMUHack Best Airline Industry Hack - 3rd Place, Thomson Reuters Scholarship, College Scholar}
-  \resumeSubHeadingListEnd
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+{}
+{}
+{}
 
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingNoBulletListStart
-    \resumeEducation
-      {The University of Texas at Austin}{Aug 2017 - May 2020}
-      {Bachelor of Science in Computer Science}{GPA: 3.85}
-  \resumeSubHeadingListEnd
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{resume/experience.tex}
+\input{resume/skills.tex}
+\input{resume/projects.tex}
+\input{resume/education.tex}
 
-%-------------------------------------------
+
+%-------------------------------------------------------------------------------
 \end{document}

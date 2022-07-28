@@ -608,15 +608,29 @@
   \end{tabular*}%
 }
 
-\newcommand*{\cventrytwopositions}[7]{%
+\newcommand*{\cventrythreepositions}[9]{%
+  \def\tempa{#1}%
+  \def\tempb{#2}%
+  \def\tempc{#3}%
+  \def\tempd{#4}%
+  \def\tempe{#5}%
+  \def\tempf{#6}%
+  \def\tempg{#7}%
+  \def\temph{#8}%
+  \def\tempi{#9}%
+  \cventrythreepositionscontinued
+}
+\newcommand*{\cventrythreepositionscontinued}[1]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-    \entrytitlestyle{#5} & \entrylocationstyle{#6} \\
-    \entrypositionstyle{#1} & \entrydatestyle{#2} \\
-    \entrypositionstyle{#3} & \entrydatestyle{#4} \\
-    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#7}}
+    \entrytitlestyle{\tempg} & \entrylocationstyle{\temph} \\
+    \entrypositionstyle{\tempa} & \entrydatestyle{\tempb} \\
+    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{\tempi}} \\
+    \entrypositionstyle{\tempc} & \entrydatestyle{\tempd} \\
+    \entrypositionstyle{\tempe} & \entrydatestyle{\tempf} \\
+    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#1}}
   \end{tabular*}%
 }
 

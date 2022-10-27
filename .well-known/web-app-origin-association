@@ -2,6 +2,9 @@
     "web_apps": {
         "https://abhinavk99.github.io/": {
             "scope": "/"
+        },
+        "https://abhinavk99.netlify.app/": {
+            "scope": "/"
         }
     }
 }
